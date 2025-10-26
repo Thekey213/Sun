@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="mlKklJL3hO_qHDoEdCki-2OIS60n_577sgW5xUOdns4" />
-
   <title>The Sun Will Come in the Morning | Azakhiwe Dilinga</title>
 
-   <meta name="description" content="A poetic collection by Azakhiwe Dilinga — reflections on hope, resilience, and renewal. Download 'The Sun Will Come in the Morning' for free and discover light after the storm." />
+  <meta name="description" content="A poetic collection by Azakhiwe Dilinga — reflections on hope, resilience, and renewal. Download 'The Sun Will Come in the Morning' for free and discover light after the storm." />
   <meta name="keywords" content="The Sun Will Come in the Morning, Azakhiwe Dilinga, poetry, hope, ebook, reflections, resilience, South African author, inspirational writing" />
   <meta name="author" content="Azakhiwe Dilinga" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://thekey213.github.io/Sun/" />
 
-  <!-- ✅ Open Graph (Facebook, WhatsApp, etc.) -->
+  <!-- ✅ Open Graph -->
   <meta property="og:title" content="The Sun Will Come in the Morning | Azakhiwe Dilinga" />
   <meta property="og:description" content="Reflections on hope and renewal by Azakhiwe Dilinga. Download the free ebook and find light after the darkest night." />
   <meta property="og:image" content="https://thekey213.github.io/Sun/cover.png" />
@@ -26,7 +25,7 @@
   <meta name="twitter:description" content="A collection of reflections on hope, resilience, and renewal. Download the free ebook now." />
   <meta name="twitter:image" content="https://thekey213.github.io/Sun/cover.png" />
 
-  <!-- ✅ Structured Data for Google -->
+  <!-- ✅ Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,16 +43,11 @@
   }
   </script>
 
-  <!-- ✅ Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
-
-  <!-- ✅ Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Reset */
     * { margin:0; padding:0; box-sizing:border-box; }
-
     body {
       font-family: "Poppins", sans-serif;
       background: linear-gradient(to bottom right, #ffffff, #f5f7fa);
@@ -63,14 +57,9 @@
     }
 
     .topbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 65px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 65px;
+      display: flex; align-items: center; justify-content: space-between;
       padding: 0 24px;
       background: rgba(255,255,255,0.9);
       backdrop-filter: blur(10px);
@@ -78,172 +67,49 @@
       z-index: 1001;
     }
 
-    .logo {
-      font-weight: 600;
-      font-size: 18px;
-      letter-spacing: 1px;
-      color: #333;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+    .logo { font-weight: 600; font-size: 18px; color: #333; display: flex; align-items: center; gap: 6px; }
 
-    .hamburger {
-      width: 30px;
-      height: 21px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      cursor: pointer;
-      z-index: 1100;
-    }
-
-    .hamburger span {
-      height: 3px;
-      background: #333;
-      border-radius: 3px;
-      transition: all 0.3s ease;
-    }
+    .hamburger { width: 30px; height: 21px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; }
+    .hamburger span { height: 3px; background: #333; border-radius: 3px; transition: all 0.3s ease; }
 
     .side-menu {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
+      position: fixed; top: 0; left: -100%;
+      width: 100%; height: 100%;
       background: linear-gradient(145deg, #1b1b2f, #1e213a);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: left 0.4s ease;
-      z-index: 1050;
+      color: white; display: flex; flex-direction: column; justify-content: center; align-items: center;
+      transition: left 0.4s ease; z-index: 1050;
     }
-
     .side-menu.active { left: 0; }
-
     .side-menu a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 24px;
-      margin: 20px 0;
-      letter-spacing: 1px;
-      transition: color 0.3s ease;
+      color: #fff; text-decoration: none; font-size: 24px;
+      margin: 20px 0; letter-spacing: 1px; transition: color 0.3s ease;
     }
-
     .side-menu a:hover { color: #00d4ff; }
+    .close-menu { position: absolute; top: 25px; right: 35px; font-size: 38px; cursor: pointer; font-weight: 300; color: #fff; }
 
-    .close-menu {
-      position: absolute;
-      top: 25px;
-      right: 35px;
-      font-size: 38px;
-      cursor: pointer;
-      font-weight: 300;
-      color: #fff;
-    }
-
-    .main {
-      max-width: 650px;
-      margin: 140px auto 80px auto;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .main img {
-      width: 60%;
-      max-width: 280px;
-      border-radius: 16px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.15);
-      transition: 0.3s;
-    }
-
+    .main { max-width: 650px; margin: 140px auto 80px auto; text-align: center; padding: 20px; }
+    .main img { width: 60%; max-width: 280px; border-radius: 16px; box-shadow: 0 10px 35px rgba(0,0,0,0.15); transition: 0.3s; }
     .main img:hover { transform: scale(1.03); }
+    .main h1 { margin-top: 25px; font-size: 30px; font-weight: 600; color: #111; }
+    .main p { margin-top: 15px; font-size: 17px; line-height: 1.7; color: #555; }
 
-    .main h1 {
-      margin-top: 25px;
-      font-size: 30px;
-      font-weight: 600;
-      color: #111;
-    }
-
-    .main p {
-      margin-top: 15px;
-      font-size: 17px;
-      line-height: 1.7;
-      color: #555;
-    }
-
-    .buttons {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
+    .buttons { margin-top: 30px; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
     .button {
-      display: inline-block;
-      padding: 14px 32px;
-      font-size: 16px;
-      font-weight: 500;
-      border-radius: 12px;
-      text-decoration: none;
-      color: white;
+      display: inline-block; padding: 14px 32px;
+      font-size: 16px; font-weight: 500;
+      border-radius: 12px; text-decoration: none; color: white;
       background: linear-gradient(135deg, #052547, #0f344d);
       box-shadow: 0 6px 20px rgba(0,123,255,0.3);
-      transition: all 0.3s ease;
-      cursor: pointer;
+      transition: all 0.3s ease; cursor: pointer;
     }
+    .button:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,123,255,0.5); }
 
-    .button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,123,255,0.5);
-    }
+    footer { text-align: center; color: #777; font-size: 14px; margin-bottom: 25px; }
 
-    footer {
-      text-align: center;
-      color: #777;
-      font-size: 14px;
-      margin-bottom: 25px;
-    }
-
-    #eftModal {
-      display: none;
-      position: fixed;
-      top:0; left:0;
-      width:100%; height:100%;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 2000;
-      text-align: center;
-      padding: 20px;
-    }
-
+    #eftModal { display: none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 2000; text-align: center; padding: 20px; }
     #eftModal.active { display: flex; }
-
-    #eftModal div {
-      background: #1e213a;
-      padding: 30px;
-      border-radius: 12px;
-      max-width: 400px;
-      width: 100%;
-      position: relative;
-      color: #fff;
-    }
-
-    #eftModal button {
-      margin-top:20px;
-      padding:10px 20px;
-      border:none;
-      border-radius:8px;
-      background:#00d4ff;
-      color:#111;
-      font-weight:600;
-      cursor:pointer;
-    }
+    #eftModal div { background: #1e213a; padding: 30px; border-radius: 12px; max-width: 400px; width: 100%; color: #fff; }
+    #eftModal button { margin-top:20px; padding:10px 20px; border:none; border-radius:8px; background:#00d4ff; color:#111; font-weight:600; cursor:pointer; }
 
     @media (max-width: 600px) {
       .main h1 { font-size: 26px; }
@@ -257,9 +123,7 @@
   <div class="topbar">
     <div class="logo">☀️ The Sun Will Come</div>
     <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </div>
   </div>
 
@@ -267,13 +131,13 @@
     <div class="close-menu" id="closeMenu">&times;</div>
     <a href="index.html">Home</a>
     <a href="messages.html">Send Love</a>
+    
   </div>
 
   <section class="main">
     <img src="cover.png" alt="The Sun Will Come in the Morning Cover" />
     <h1>The Sun Will Come in the Morning</h1>
     <p>
-        
       Download <strong>The Sun Will Come in the Morning</strong> and find the light waiting for you beyond the darkest night.
     </p>
 
@@ -287,12 +151,9 @@
   <div id="eftModal">
     <div>
       <h2>Donate via EFT</h2>
-      <p>
-         <strong>Bank:</strong> TymeBank<br>
-         <strong>Account Number:</strong> 51057604588</p>
-      <p><em>Use your full name with Don at the end for example NAPHIZOZODon or 'AnonymousDon' in the reference.</em></p>
-      <button id="closeEFT">Close</bu  
-        tton>
+      <p><strong>Bank:</strong> TymeBank<br><strong>Account Number:</strong> 51057604588</p>
+      <p><em>Use your full name with Don at the end (e.g. NAPHIZOZODon or 'AnonymousDon').</em></p>
+      <button id="closeEFT">Close</button>
     </div>
   </div>
 
@@ -301,24 +162,28 @@
   </footer>
 
   <script>
+    // Menu
     const hamburger = document.getElementById('hamburger');
     const sideMenu = document.getElementById('sideMenu');
     const closeMenu = document.getElementById('closeMenu');
-
     hamburger.addEventListener('click', () => sideMenu.classList.add('active'));
     closeMenu.addEventListener('click', () => sideMenu.classList.remove('active'));
-    sideMenu.addEventListener('click', e => {
-      if(e.target === sideMenu) sideMenu.classList.remove('active');
-    });
+    sideMenu.addEventListener('click', e => { if(e.target === sideMenu) sideMenu.classList.remove('active'); });
 
+    // EFT Modal
     const eftButton = document.getElementById('eftButton');
     const eftModal = document.getElementById('eftModal');
     const closeEFT = document.getElementById('closeEFT');
-
     eftButton.addEventListener('click', () => eftModal.classList.add('active'));
     closeEFT.addEventListener('click', () => eftModal.classList.remove('active'));
-    window.addEventListener('click', e => {
-      if(e.target === eftModal) eftModal.classList.remove('active');
+    window.addEventListener('click', e => { if(e.target === eftModal) eftModal.classList.remove('active'); });
+
+    // ✅ CountAPI - Track Downloads
+    const downloadBtn = document.getElementById('download');
+    downloadBtn.addEventListener('click', () => {
+      fetch('https://api.countapi.xyz/hit/thekey213/sun-downloads')
+        .then(res => res.json())
+        .then(data => console.log("Download count:", data.value));
     });
   </script>
 </body>
